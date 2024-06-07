@@ -17,7 +17,7 @@ public class GolfBallController : MonoBehaviour
              "this determines if it overshoot or undershoots")]
     [Range(0,100)] [SerializeField] private int undershootToOvershootRatio;
     
-    [Header("Parameters")] 
+    [Header("Parameters")]   
     [SerializeField] private float undershootDistance; //it cannot greater than the distance between golf and hole
     [SerializeField] private float overshootDistance;
     [SerializeField] private int wrongAngleDistance;
@@ -32,7 +32,6 @@ public class GolfBallController : MonoBehaviour
     private Vector3 wrongAngleVectorNormalised;
 
     private enum ShotResult { IntoHole, WrongAngle, Undershoot, Overshoot }
-
     
     public bool holeDetectionTrigger;
     
