@@ -6,10 +6,13 @@
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
+/_[Bb]uild/
+/_[Bb]uild[Aa]rm/
+/_[Bb]uild[Aa]rm2/
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-
+/DingFu
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
@@ -69,4 +72,26 @@ crashlytics-build.properties
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/* 
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Android Resolved Dependencies 
+[Aa]ssets/Plugins/Android*
+ProjectSettings/AndroidResolverDependencies.xml
+Assets/Plugins/Android/proguard-user.txt
+
+
+.vscode/
+
+*.blend1
+
+Assets/MixedRealityToolkit.Generated*
+Assets/StreamingAssets/GltfModels/
+Assets/StreamingAssets/GltfModels.meta
+Assets/StreamingAssets.meta
+Assets/TextMesh Pro*
+Assets/XR/Temp*
+Assets/Roadmap.Generated*
+Packages/packages-lock.json
+
+# Apple Mac Files
+.DS_Store

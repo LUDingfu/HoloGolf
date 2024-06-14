@@ -682,11 +682,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: HoloGolf
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: OVILab
+  metroCertificateIssuer: OVILab
+  metroCertificateNotAfter: 00e2f1b76bdadb01
   metroApplicationDescription: HoloGolf
   wsaImages: {}
   metroTileShortName: HoloGolf
