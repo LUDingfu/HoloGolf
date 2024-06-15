@@ -9,19 +9,17 @@ public class HoleDetection : MonoBehaviour
         if (golfBall != null && golfBall.holeDetectionTrigger)
         {
             Debug.Log("Ball Entered the Hole!");
-            StartCoroutine(WaitForBallToStop(other));
+            StartCoroutine(WaitForBallToStop(other, golfBall));
         }
     }
 
-    private IEnumerator WaitForBallToStop(Collider golfBallCollider)
+    private IEnumerator WaitForBallToStop(Collider golfBallCollider, GolfBallController ball)
     {
-        // Wait until the ball's velocity is very close to zero
-        while (golfBallCollider.GetComponent<Rigidbody>().velocity.magnitude > 0.3f)
+        while (ball.ActualSpeed > 0.3f)
         {
-            yield return new WaitForFixedUpdate();  // Wait for the next physics update
+            yield return new WaitForFixedUpdate();  
         }
-    
-        golfBallCollider.GetComponent<Collider>().isTrigger = true;
+        ball.SetBallTrigger(true);
         Debug.Log("Ball has stopped. Now falling into the hole.");
     }
 }

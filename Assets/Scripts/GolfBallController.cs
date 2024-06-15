@@ -23,6 +23,7 @@ public class GolfBallController : MonoBehaviour
     [SerializeField] private int wrongAngleDistance;
     [SerializeField] private ShotResult currentShotResult;
     
+    private float actualSpeed;
     private new Rigidbody rigidbody;
     private bool hasFired;
     private bool directionFromGolfToHoleLock;
@@ -30,6 +31,9 @@ public class GolfBallController : MonoBehaviour
     private bool wrongAngleLock;
     private Vector3 wrongAngleVector;
     private Vector3 wrongAngleVectorNormalised;
+    private Collider col;
+    
+    public float ActualSpeed => actualSpeed;
 
     private enum ShotResult { IntoHole, WrongAngle, Undershoot, Overshoot }
     
@@ -40,48 +44,28 @@ public class GolfBallController : MonoBehaviour
         targetDirectionNormalized = Vector3.zero;
         wrongAngleVector = Vector3.zero;
         rigidbody = GetComponent<Rigidbody>();
+        col = GetComponent<Collider>();
         ComputeShotType();
         Debug.Log(currentShotResult);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !hasFired)
+        if (Input.GetKeyDown(KeyCode.Z) && !hasFired)
         {
             hasFired = true;
         }
         FireBall();
     }
 
+    public void SetBallTrigger(bool state)
+    {
+        col.isTrigger = state;
+    }
+
     private void FireBall()
     {
-        MoveBall();
-    }
-
-    private void ComputeShotType()
-    {
-        int roll = Random.Range(0, 100);
-        if (roll < correctPercentage) currentShotResult = ShotResult.IntoHole;
-        else
-        {
-            roll = Random.Range(0, 100);
-            if (roll < wrongAngleChance)
-            {
-                currentShotResult = ShotResult.WrongAngle;
-            }
-            else
-            {
-                roll = Random.Range(0, 100);
-                currentShotResult = roll < undershootToOvershootRatio ? ShotResult.Overshoot : ShotResult.Undershoot;
-            }
-        }
-    }
-
-
-    private void MoveBall()
-    {
         if (!hasFired) return;
-        
         Vector3 targetDirectionVector = (holeTransform.position - this.transform.position);
         float targetDirectionVectorMagnitude = targetDirectionVector.magnitude;
         if (!directionFromGolfToHoleLock)
@@ -103,7 +87,7 @@ public class GolfBallController : MonoBehaviour
             case ShotResult.IntoHole:
                 holeDetectionTrigger = true;
                 SetActualSpeed(targetDirectionNormalized, targetDirectionVectorMagnitude, speedFactor);
-                if (rigidbody.velocity.magnitude < 0.9f) speedFactor = 0;
+                if (rigidbody.velocity.magnitude < 0.01f) speedFactor = 0;
                 break;
             
             case ShotResult.WrongAngle:
@@ -125,6 +109,25 @@ public class GolfBallController : MonoBehaviour
         rigidbody.velocity += new Vector3(0,-10,0);
     }
 
+    private void ComputeShotType()
+    {
+        int roll = Random.Range(0, 100);
+        if (roll < correctPercentage) currentShotResult = ShotResult.IntoHole;
+        else
+        {
+            roll = Random.Range(0, 100);
+            if (roll < wrongAngleChance)
+            {
+                currentShotResult = ShotResult.WrongAngle;
+            }
+            else
+            {
+                roll = Random.Range(0, 100);
+                currentShotResult = roll < undershootToOvershootRatio ? ShotResult.Overshoot : ShotResult.Undershoot;
+            }
+        }
+    }
+
     private Vector3 GiveWrongAngle()
     {
         float xCheck = -1;
@@ -140,7 +143,7 @@ public class GolfBallController : MonoBehaviour
 
     private void SetActualSpeed(Vector3 targetDirectionNormalized, float directionVectorMagnitude, float speedFactor)
     {
-        float actuallySpeed = speedFactor * directionVectorMagnitude;
-        rigidbody.velocity = targetDirectionNormalized * actuallySpeed;
+        actualSpeed = speedFactor * directionVectorMagnitude;
+        rigidbody.velocity = targetDirectionNormalized * actualSpeed;
     }
 }
