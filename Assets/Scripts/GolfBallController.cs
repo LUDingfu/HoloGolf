@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class GolfBallController : MonoBehaviour
 {
-    [SerializeField] private float speedFactor = 10.0f; 
+    [SerializeField] private float speedFactor = 1.0f; 
     [SerializeField] private Transform holeTransform;
     
     [Header("Probabilities")]
@@ -18,7 +19,7 @@ public class GolfBallController : MonoBehaviour
     [Range(0,100)] [SerializeField] private int undershootToOvershootRatio;
     
     [Header("Parameters")]   
-    [SerializeField] private float undershootDistance; //it cannot greater than the distance between golf and hole
+    [SerializeField] private float undershootDistance;
     [SerializeField] private float overshootDistance;
     [SerializeField] private int wrongAngleDistance;
     [SerializeField] private ShotResult currentShotResult;
@@ -32,7 +33,7 @@ public class GolfBallController : MonoBehaviour
     private Vector3 wrongAngleVector;
     private Vector3 wrongAngleVectorNormalised;
     private Collider col;
-    
+    private Vector3 startPosition;
     public float ActualSpeed => actualSpeed;
 
     private enum ShotResult { IntoHole, WrongAngle, Undershoot, Overshoot }
@@ -41,6 +42,7 @@ public class GolfBallController : MonoBehaviour
     
     void Start()
     {
+        startPosition = transform.position;
         targetDirectionNormalized = Vector3.zero;
         wrongAngleVector = Vector3.zero;
         rigidbody = GetComponent<Rigidbody>();
@@ -55,7 +57,20 @@ public class GolfBallController : MonoBehaviour
         {
             hasFired = true;
         }
-        FireBall();
+        MoveBall();
+    }
+
+    public void Reset()
+    {
+        hasFired = false;
+        transform.position = startPosition;
+        rigidbody.velocity = Vector3.zero;
+        SetBallTrigger(false);
+    }
+
+    public void FireBall()
+    {
+        hasFired = true;
     }
 
     public void SetBallTrigger(bool state)
@@ -63,7 +78,7 @@ public class GolfBallController : MonoBehaviour
         col.isTrigger = state;
     }
 
-    private void FireBall()
+    private void MoveBall()
     {
         if (!hasFired) return;
         Vector3 targetDirectionVector = (holeTransform.position - this.transform.position);
