@@ -1,10 +1,11 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class GolfBallController : MonoBehaviour
 {
-    [SerializeField] private float speedFactor = 1.0f; 
+    [SerializeField] private float speedFactor = 1.0f;
+    [SerializeField] private float gravity = 9.8f;
+    
     [SerializeField] private Transform holeTransform;
     
     [Header("Probabilities")]
@@ -23,6 +24,8 @@ public class GolfBallController : MonoBehaviour
     [SerializeField] private float overshootDistance;
     [SerializeField] private int wrongAngleDistance;
     [SerializeField] private ShotResult currentShotResult;
+    [SerializeField] private float fireDelay = 10.0f; 
+    [SerializeField] private float resetDelay = 10.0f; 
     
     private float actualSpeed;
     private new Rigidbody rigidbody;
@@ -34,10 +37,11 @@ public class GolfBallController : MonoBehaviour
     private Vector3 wrongAngleVectorNormalised;
     private Collider col;
     private Vector3 startPosition;
+    private float timer;
     public float ActualSpeed => actualSpeed;
+    private bool hasFallen = false;
 
     private enum ShotResult { IntoHole, WrongAngle, Undershoot, Overshoot }
-    
     public bool holeDetectionTrigger;
     
     void Start()
@@ -53,35 +57,44 @@ public class GolfBallController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !hasFired)
+        timer += Time.deltaTime;
+        if (timer >= fireDelay && !hasFired)
         {
             hasFired = true;
-        }
-        MoveBall();
+            timer = 0.0f;
+        }   
+        MoveBall(); 
     }
 
     public void Reset()
     {
         hasFired = false;
         transform.position = startPosition;
-        rigidbody.velocity = Vector3.zero;
-        SetBallTrigger(false);
+        rigidbody.velocity = Vector3.zero; 
+        hasFallen = false;
+        directionFromGolfToHoleLock = false;
+        wrongAngleLock = false;
+        col.isTrigger = false; 
     }
 
-    public void FireBall()
-    {
-        hasFired = true;
-    }
-
-    public void SetBallTrigger(bool state)
+    public void Fall(bool state)
     {
         col.isTrigger = state;
+        rigidbody.velocity += Vector3.down * gravity;
+        hasFallen = true;
+        // start timer to reset ball position
+        timer += Time.deltaTime;
+        if (timer >= resetDelay)
+        {
+            Reset();
+            timer = 0.0f;
+        }   
     }
 
     private void MoveBall()
     {
-        if (!hasFired) return;
-        Vector3 targetDirectionVector = (holeTransform.position - this.transform.position);
+        if (!hasFired || hasFallen) return;
+        Vector3 targetDirectionVector = (holeTransform.position - transform.position);
         float targetDirectionVectorMagnitude = targetDirectionVector.magnitude;
         if (!directionFromGolfToHoleLock)
         {
@@ -121,7 +134,6 @@ public class GolfBallController : MonoBehaviour
                 break;
             
         }
-        rigidbody.velocity += new Vector3(0,-10,0);
     }
 
     private void ComputeShotType()
