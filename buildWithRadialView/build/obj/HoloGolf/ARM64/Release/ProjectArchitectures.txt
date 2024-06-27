@@ -1,0 +1,1 @@
+D:\HoloGolf\buildWithRadialView\HoloGolf\HoloGolf.vcxproj;arm64

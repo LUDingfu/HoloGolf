@@ -1,0 +1,104 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void GolfBallController_get_ActualSpeed_m06568E226BCC3E2FE295FD93D2476DB758A7C0EA (void);
+extern void GolfBallController_Start_m90FC7324320F4A9D8E081DDF14518FE1311DF05A (void);
+extern void GolfBallController_Update_m473DB57C05A642304F091E011E31223F2F49BBE9 (void);
+extern void GolfBallController_Reset_m3F9A0E8E3C7A9F9877AF55442446C09ED62E0B58 (void);
+extern void GolfBallController_Fall_m32DA4FD840384AF85C0948D5DB8C7591A6835A4B (void);
+extern void GolfBallController_MoveBall_m88BB24A91198A0BFED27FC1B37CB3D44739B8133 (void);
+extern void GolfBallController_ComputeShotType_m28CFF2B1F8469E6845E667DA4808241D4E41341C (void);
+extern void GolfBallController_GiveWrongAngle_m7D22A519F8D2D11BB05AD56DD440CF6BC69A4AA4 (void);
+extern void GolfBallController_SetActualSpeed_mEB400C98764F68D6189634F5EB1FCEFA1A522967 (void);
+extern void GolfBallController__ctor_m5D3090222BD58ABAF1EC84A421C1485528D7F912 (void);
+extern void HoleDetection_OnTriggerEnter_m46A8FA03070E4354884F62D535E12A48D7128936 (void);
+extern void HoleDetection_WaitForBallToStop_mF281D084C832A64B724507D06CC80E3EF0978008 (void);
+extern void HoleDetection__ctor_m5F3F7D636F3667C0FC2B188365A83E87CA3B030C (void);
+extern void U3CWaitForBallToStopU3Ed__2__ctor_m76EB3BCBEE962BC084F66A3287F939E44610A89B (void);
+extern void U3CWaitForBallToStopU3Ed__2_System_IDisposable_Dispose_mFB1D134D6F168FCCE5D114C4562C72E9F2C7F9EE (void);
+extern void U3CWaitForBallToStopU3Ed__2_MoveNext_m4530ED860C8A869AA98DDAB92BDB93ACD3F67E70 (void);
+extern void U3CWaitForBallToStopU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1B0CE2FEE0255B851A8714E99CB5AF8EC832BC15 (void);
+extern void U3CWaitForBallToStopU3Ed__2_System_Collections_IEnumerator_Reset_m2B49B6D2E6868383111ED3D9078E6EB001E31749 (void);
+extern void U3CWaitForBallToStopU3Ed__2_System_Collections_IEnumerator_get_Current_m6534860712CFDDC3D50AF9E998153803B631096F (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[21] = 
+{
+	GolfBallController_get_ActualSpeed_m06568E226BCC3E2FE295FD93D2476DB758A7C0EA,
+	GolfBallController_Start_m90FC7324320F4A9D8E081DDF14518FE1311DF05A,
+	GolfBallController_Update_m473DB57C05A642304F091E011E31223F2F49BBE9,
+	GolfBallController_Reset_m3F9A0E8E3C7A9F9877AF55442446C09ED62E0B58,
+	GolfBallController_Fall_m32DA4FD840384AF85C0948D5DB8C7591A6835A4B,
+	GolfBallController_MoveBall_m88BB24A91198A0BFED27FC1B37CB3D44739B8133,
+	GolfBallController_ComputeShotType_m28CFF2B1F8469E6845E667DA4808241D4E41341C,
+	GolfBallController_GiveWrongAngle_m7D22A519F8D2D11BB05AD56DD440CF6BC69A4AA4,
+	GolfBallController_SetActualSpeed_mEB400C98764F68D6189634F5EB1FCEFA1A522967,
+	GolfBallController__ctor_m5D3090222BD58ABAF1EC84A421C1485528D7F912,
+	HoleDetection_OnTriggerEnter_m46A8FA03070E4354884F62D535E12A48D7128936,
+	HoleDetection_WaitForBallToStop_mF281D084C832A64B724507D06CC80E3EF0978008,
+	HoleDetection__ctor_m5F3F7D636F3667C0FC2B188365A83E87CA3B030C,
+	U3CWaitForBallToStopU3Ed__2__ctor_m76EB3BCBEE962BC084F66A3287F939E44610A89B,
+	U3CWaitForBallToStopU3Ed__2_System_IDisposable_Dispose_mFB1D134D6F168FCCE5D114C4562C72E9F2C7F9EE,
+	U3CWaitForBallToStopU3Ed__2_MoveNext_m4530ED860C8A869AA98DDAB92BDB93ACD3F67E70,
+	U3CWaitForBallToStopU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1B0CE2FEE0255B851A8714E99CB5AF8EC832BC15,
+	U3CWaitForBallToStopU3Ed__2_System_Collections_IEnumerator_Reset_m2B49B6D2E6868383111ED3D9078E6EB001E31749,
+	U3CWaitForBallToStopU3Ed__2_System_Collections_IEnumerator_get_Current_m6534860712CFDDC3D50AF9E998153803B631096F,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[21] = 
+{
+	9046,
+	9132,
+	9132,
+	9132,
+	7056,
+	9132,
+	9132,
+	9122,
+	2072,
+	9132,
+	7190,
+	6350,
+	9132,
+	7148,
+	9132,
+	8847,
+	8982,
+	9132,
+	8982,
+	13701,
+	9132,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	21,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

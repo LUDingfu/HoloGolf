@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-QFDGR6E</Machine>
+    <WindowsUser>ludin</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|ARM64</SolutionConfiguration>
+    <PackageArchitecture>arm64</PackageArchitecture>
+    <PackageIdentityName>f23ea42d-de28-4b43-a00b-49d0f3062c91</PackageIdentityName>
+    <PackageIdentityPublisher>CN=OVILab</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\HoloGolf\buildWithRadialView\build\obj\HoloGolf\ARM64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>D:\HoloGolf\buildWithRadialView\build\bin\ARM64\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>665385B5AC26EB9DED8DE41B926AC6EE915C18E808F94CA2747AEA131EF207A1</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>HoloGolf_1.0.0.0_arm64__3fg9xsm0nww7c</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>HoloGolf_3fg9xsm0nww7c!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>HoloGolf</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=OVILab</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\HoloGolf\buildWithRadialView\build\bin\ARM64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:08:41.203</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\build\bin\ARM64\Release\HoloGolf.exe">
+      <PackagePath>HoloGolf.exe</PackagePath>
+      <Modified>2024-06-26T23:08:27.714</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files\Unity\Hub\Editor\2022.3.32f1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release\UnityPlayer.winmd">
+      <PackagePath>UnityPlayer.winmd</PackagePath>
+      <Modified>2024-05-29T12:33:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files\Unity\Hub\Editor\2022.3.32f1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release\UnityPlayer.dll">
+      <PackagePath>UnityPlayer.dll</PackagePath>
+      <Modified>2024-05-29T12:33:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\build\bin\ARM64\Release\HoloGolf.winmd">
+      <PackagePath>HoloGolf.winmd</PackagePath>
+      <Modified>2024-06-26T23:08:27.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:05:26.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:05:26.278</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:05:26.276</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:05:26.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:05:26.273</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:05:26.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2024-06-26T23:05:26.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+      <Modified>2024-06-26T23:05:26.270</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\nativePlugins.txt">
+      <PackagePath>Data\nativePlugins.txt</PackagePath>
+      <Modified>2024-06-26T23:05:26.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\il2cpp_data\Metadata\global-metadata.dat">
+      <PackagePath>Data\il2cpp_data\Metadata\global-metadata.dat</PackagePath>
+      <Modified>2024-06-26T23:05:41.615</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\il2cpp_data\Resources\mscorlib.dll-resources.dat">
+      <PackagePath>Data\il2cpp_data\Resources\mscorlib.dll-resources.dat</PackagePath>
+      <Modified>2024-06-26T23:05:41.578</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\globalgamemanagers">
+      <PackagePath>Data\globalgamemanagers</PackagePath>
+      <Modified>2024-06-26T23:05:26.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\level0">
+      <PackagePath>Data\level0</PackagePath>
+      <Modified>2024-06-26T23:05:26.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\Resources\unity_builtin_extra">
+      <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
+      <Modified>2024-06-26T23:05:26.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\Resources\unity default resources">
+      <PackagePath>Data\Resources\unity default resources</PackagePath>
+      <Modified>2024-06-26T23:05:26.278</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\globalgamemanagers.assets">
+      <PackagePath>Data\globalgamemanagers.assets</PackagePath>
+      <Modified>2024-06-26T23:05:26.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\resources.assets">
+      <PackagePath>Data\resources.assets</PackagePath>
+      <Modified>2024-06-26T23:05:26.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\sharedassets0.assets">
+      <PackagePath>Data\sharedassets0.assets</PackagePath>
+      <Modified>2024-06-26T23:05:26.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\globalgamemanagers.assets.resS">
+      <PackagePath>Data\globalgamemanagers.assets.resS</PackagePath>
+      <Modified>2024-06-26T23:05:26.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\level0.resS">
+      <PackagePath>Data\level0.resS</PackagePath>
+      <Modified>2024-06-26T23:05:26.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\resources.assets.resS">
+      <PackagePath>Data\resources.assets.resS</PackagePath>
+      <Modified>2024-06-26T23:05:26.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\sharedassets0.assets.resS">
+      <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
+      <Modified>2024-06-26T23:05:26.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\RuntimeInitializeOnLoads.json">
+      <PackagePath>Data\RuntimeInitializeOnLoads.json</PackagePath>
+      <Modified>2024-06-26T23:05:26.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\ScriptingAssemblies.json">
+      <PackagePath>Data\ScriptingAssemblies.json</PackagePath>
+      <Modified>2024-06-26T23:05:26.281</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\UnitySubsystems\MicrosoftOpenXRPlugin\UnitySubsystemsManifest.json">
+      <PackagePath>Data\UnitySubsystems\MicrosoftOpenXRPlugin\UnitySubsystemsManifest.json</PackagePath>
+      <Modified>2024-06-26T23:05:26.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\UnitySubsystems\UnityOpenXR\UnitySubsystemsManifest.json">
+      <PackagePath>Data\UnitySubsystems\UnityOpenXR\UnitySubsystemsManifest.json</PackagePath>
+      <Modified>2024-06-26T23:05:26.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\Data\boot.config">
+      <PackagePath>Data\boot.config</PackagePath>
+      <Modified>2024-06-26T23:05:26.153</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\UnityOpenXR.dll">
+      <PackagePath>UnityOpenXR.dll</PackagePath>
+      <Modified>2024-06-26T23:05:26.280</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\UnityOpenXRHands.dll">
+      <PackagePath>UnityOpenXRHands.dll</PackagePath>
+      <Modified>2024-06-26T23:05:26.279</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\MicrosoftOpenXRPlugin.dll">
+      <PackagePath>MicrosoftOpenXRPlugin.dll</PackagePath>
+      <Modified>2024-06-26T23:05:26.278</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\HoloGolf\openxr_loader.dll">
+      <PackagePath>openxr_loader.dll</PackagePath>
+      <Modified>2024-06-26T23:05:26.278</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\build\bin\ARM64\Release\GameAssembly.dll">
+      <PackagePath>GameAssembly.dll</PackagePath>
+      <Modified>2024-06-26T23:08:25.139</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files\Unity\Hub\Editor\2022.3.32f1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release\baselib.dll">
+      <PackagePath>baselib.dll</PackagePath>
+      <Modified>2024-05-29T12:33:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\HoloGolf\buildWithRadialView\build\bin\ARM64\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2024-06-26T23:08:41.178</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

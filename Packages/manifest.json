@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "com.microsoft.mixedreality.openxr": "file:MixedReality/com.microsoft.mixedreality.openxr-1.10.1.tgz",
+    "com.microsoft.mrtk.graphicstools.unity": "file:MixedReality/com.microsoft.mrtk.graphicstools.unity-0.7.0.tgz",
+    "com.microsoft.mrtk.tts.windows": "file:MixedReality/com.microsoft.mrtk.tts.windows-1.0.4.tgz",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.2d": "2.0.1",
     "com.unity.feature.development": "1.0.1",
@@ -51,8 +54,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.microsoft.mrtk.graphicstools.unity": "file:MixedReality/com.microsoft.mrtk.graphicstools.unity-0.7.0.tgz",
-    "com.microsoft.mrtk.tts.windows": "file:MixedReality/com.microsoft.mrtk.tts.windows-1.0.4.tgz"
+    "com.unity.modules.xr": "1.0.0"
   }
 }
